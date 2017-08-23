@@ -87,6 +87,9 @@ exports.handler = function(req, res) {
           if (err || !doc)
             return res.send({error: "Domain not found"});
 
+          if (doc.disabled)
+            return res.send({error: "Domain disabled"});
+
           // Verify event
           let hash = crypto.createHmac('sha256', doc.key)
                              .update([event_data.timestamp, event_data.token].join(''))

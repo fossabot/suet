@@ -398,8 +398,11 @@ exports.login = function(data, fn) {
       Domains.get(doc._id, function(err, domains){
         if (domains && domains.length > 0) {
           let _domains = [];
-          for (let domain of domains)
+          for (let domain of domains) {
+            if (domain.disabled)
+              json.disabled = true;
             _domains.push(domain.domain)
+          }
           json.domains = _domains;
           json.active_domain = _domains[0];
         }

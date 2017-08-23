@@ -16,6 +16,11 @@
       <p>No data available for this dashboard yet. To start receiving data, visit the <a href="https://mailgun.com/app/webhooks">Webhooks page</a> of your Mailgun account and set the event URLs to <code>{{webhook}}</code></p>
     </div>
     {% endif %}
+    {% if acc_disabled %}
+    <div class="box error">
+      <p>Your domains have been disabled and will no longer receive events from Mailgun. To enable, kindly send an email to <a href="mailto:hello@suet.co">hello@suet.co</a></p>
+    </div>
+    {% endif %}
     <div class="row">
       <div class="twelve columns">
         <div class="box">
