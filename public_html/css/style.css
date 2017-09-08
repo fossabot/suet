@@ -230,6 +230,14 @@ header .subnav li {
   margin: 10px 0
 }
 
+.grid .columns {
+  padding: 10px 0;
+  border-right: 1px dotted #bbb;
+}
+.grid .columns:last-child {
+  border-right: 0;
+}
+
 tags {
   border-radius: 4px;
   background-color: #fff
