@@ -66,6 +66,7 @@
   </div>
 </section>
 <div class="modal hide">
+  <a href="#" class="close"><i class="icon-cross"></i></a>
   <iframe width="100%" height="100%" frameborder="0" sandbox="allow-same-origin allow-popups allow-scripts"></iframe>
 </div>
 <script type="text/javascript" src="/js/jquery.js"></script>
@@ -73,8 +74,9 @@
 var iFrameDoc = $('iframe')[0].contentDocument || $('iframe')[0].contentWindow.document;
 iFrameDoc.write(`<base target="_blank">{{ data.body }}`); // todo: escape ` and $
 iFrameDoc.close();
-$('.view').on('click', function() {
+$('.view, .close').on('click', function() {
   $('.modal').toggleClass('hide');
+  return false;
 });
 $(document).keyup(function(e) {
   if (e.keyCode == 27) {
