@@ -1,4 +1,5 @@
 ## Suet [![Build Status](https://travis-ci.org/kehers/suet.svg?branch=master)](https://travis-ci.org/kehers/suet)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkehers%2Fsuet.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkehers%2Fsuet?ref=badge_shield)
 
 Suet is an analytics dashboard and reporting tool for transactional emails through Mailgun. It gives better insight into the performance of your transactional emails by providing answers to questions like: 
 
@@ -27,3 +28,6 @@ You can submit an issue at [github.com/kehers/suet/issues](http://github.com/keh
 Copyright (c) 2017 Opeyemi Obembe. Released under the [GPLv3 license](https://www.gnu.org/licenses/gpl-3.0.txt).
 
 If you use Suet for more than one Mailgun domain, make money from your list, want email support or just want to support development, consider purchasing a [one-time licence for $70](https://pay.paddle.com/checkout/515197).
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkehers%2Fsuet.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkehers%2Fsuet?ref=badge_large)
